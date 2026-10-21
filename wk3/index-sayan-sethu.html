@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>2026 US midterms: What could change?</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="page-shell">
+
+    <header class="article-header">
+
+      <p class="kicker">
+        2026 US midterms
+      </p>
+
+      <h1>
+        What could the midterms change?
+      </h1>
+
+      <p class="standfirst">
+        Trump is not up for election but the midterms could put a 
+        damper on his ability to control the budget and decide appointments 
+        to important government positions.
+      </p>
+
+      <p class="byline">
+        By <strong>Sayan Ghosh</strong> and <strong>Sethu Pradeep</strong>
+      </p>
+
+    </header>
+
+
+    <section
+      class="interactive"
+      aria-labelledby="interactive-title"
+    >
+
+      <div class="interactive-heading">
+
+        <div>
+
+          <p class="interactive-kicker">
+            Build a result
+          </p>
+
+          <h2 id="interactive-title">
+            Who controls Congress?
+          </h2>
+
+        </div>
+
+
+        <button
+          class="reset-button"
+          id="resetButton"
+          type="button"
+        >
+          Reset
+        </button>
+
+      </div>
+
+
+      <!-- The presidency stays fixed in every scenario. -->
+      <div
+        class="presidency-strip"
+        aria-label="Presidency: Republican, fixed"
+      >
+
+        <div>
+
+          <p class="institution-label">
+            Presidency
+          </p>
+
+          <p class="presidency-name">
+            White House
+          </p>
+
+        </div>
+
+        <div class="presidency-status">
+
+          <strong>
+            Republican
+          </strong>
+
+          <span>
+            Donald Trump
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <!-- Each chamber combines its selector and visual state. -->
+      <div class="chamber-grid">
+
+        <fieldset
+          class="chamber-card"
+          id="houseCard"
+        >
+
+          <legend>
+            House of Representatives
+          </legend>
+
+          <div class="chamber-card-top">
+
+            <p class="chamber-prompt">
+              Choose control
+            </p>
+
+            <p
+              class="party-state"
+              id="houseState"
+            >
+              Not selected
+            </p>
+
+          </div>
+
+
+          <div
+            class="party-buttons"
+            role="group"
+            aria-label="Choose House control"
+          >
+
+            <button
+              class="party-button"
+              type="button"
+              data-chamber="house"
+              data-party="D"
+              aria-pressed="false"
+            >
+              Democratic
+            </button>
+
+            <button
+              class="party-button"
+              type="button"
+              data-chamber="house"
+              data-party="R"
+              aria-pressed="false"
+            >
+              Republican
+            </button>
+
+          </div>
+
+        </fieldset>
+
+
+        <fieldset
+          class="chamber-card"
+          id="senateCard"
+        >
+
+          <legend>
+            Senate
+          </legend>
+
+          <div class="chamber-card-top">
+
+            <p class="chamber-prompt">
+              Choose control
+            </p>
+
+            <p
+              class="party-state"
+              id="senateState"
+            >
+              Not selected
+            </p>
+
+          </div>
+
+
+          <div
+            class="party-buttons"
+            role="group"
+            aria-label="Choose Senate control"
+          >
+
+            <button
+              class="party-button"
+              type="button"
+              data-chamber="senate"
+              data-party="D"
+              aria-pressed="false"
+            >
+              Democratic
+            </button>
+
+            <button
+              class="party-button"
+              type="button"
+              data-chamber="senate"
+              data-party="R"
+              aria-pressed="false"
+            >
+              Republican
+            </button>
+
+          </div>
+
+        </fieldset>
+
+      </div>
+
+
+      <div class="balance-summary">
+
+        <span>
+          Result
+        </span>
+
+        <strong id="balanceLabel">
+          Choose both chambers
+        </strong>
+
+      </div>
+
+
+      <section
+        class="result-panel is-waiting"
+        id="resultPanel"
+        aria-live="polite"
+        aria-atomic="true"
+      >
+
+        <p
+          class="waiting-message"
+          id="waitingMessage"
+        >
+          Choose a party for both chambers to see what could happen.
+        </p>
+
+
+        <div class="result-content">
+
+          <header class="scenario-header">
+
+            <p class="scenario-eyebrow">
+              Hypothetical scenario
+            </p>
+
+            <h2
+              class="scenario-title"
+              id="scenarioTitle"
+            ></h2>
+
+          </header>
+
+
+          <div
+            class="scenario-rows"
+            id="scenarioRows"
+          ></div>
+
+        </div>
+
+      </section>
+
+    </section>
+
+
+    <!-- Rules now sit at the very bottom and remain hidden until opened. -->
+    <details class="rules">
+
+      <summary>
+        How the rules work
+      </summary>
+
+      <div class="rules-body">
+
+        <p>
+          <strong>Making laws:</strong>
+          the House and Senate must pass the same bill before it goes to
+          the president. The president can sign it or veto it. Congress
+          can override a veto only with a two-thirds vote in both chambers.
+        </p>
+
+        <p>
+          <strong>Senate filibuster:</strong>
+          most contested legislation needs three-fifths of senators,
+          normally 60 when all 100 seats are filled, to end debate.
+          Certain tax and spending measures can use the separate budget
+          reconciliation process.
+        </p>
+
+        <p>
+          <strong>Appointments:</strong>
+          the president nominates federal judges, Cabinet secretaries and
+          many other senior officials, but the Senate decides whether to
+          confirm them.
+        </p>
+
+        <p>
+          <strong>Executive power:</strong>
+          presidents can act without a new law in some areas, but those
+          actions remain subject to existing laws, congressional funding
+          decisions and review by the courts.
+        </p>
+
+        <p>
+          <strong>A 50–50 Senate:</strong>
+          the vice-president can break tie votes. Independent senators
+          also affect control depending on which party they caucus with.
+        </p>
+
+      </div>
+
+    </details>
+
+  </main>
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
